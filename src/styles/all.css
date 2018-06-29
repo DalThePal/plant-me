@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Aldine Regular';
+  src: url("./fonts/Aldine.ttf"); }
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("./fonts/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url("./fonts/Raleway-Light.ttf"); }
+
+.Community {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; }
+  .Community .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%; }
+    .Community .body img {
+      margin-right: 10px; }
+    .Community .body p {
+      font-family: "Raleway Regular"; }
+
+.Events {
+  background-color: white; }
+
+.Footer {
+  align-items: center;
+  background-color: #373736;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-around;
+  width: 100%; }
+  .Footer .subscribe {
+    margin: 5px; }
+    .Footer .subscribe input {
+      background-color: #373736;
+      border: 2px solid white;
+      color: white;
+      font-family: "Raleway Regular"; }
+    .Footer .subscribe input:focus {
+      outline: none; }
+    .Footer .subscribe button {
+      background-color: white;
+      border: 2px solid white;
+      color: black;
+      font-family: "Raleway Regular";
+      text-decoration: none;
+      width: 50px; }
+    .Footer .subscribe button:hover {
+      background-color: white; }
+  .Footer .socialLinks {
+    margin: 5px; }
+  .Footer p {
+    color: white;
+    font-family: "Raleway Regular";
+    font-size: 10pt;
+    margin: 5px; }
+
+.Header {
+  align-items: center;
+  background-color: #373736;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  justify-content: space-around;
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  width: 100%; }
+  .Header .links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Raleway Light";
+    font-size: 12pt;
+    justify-content: space-between;
+    width: 30%; }
+    .Header .links a:link {
+      text-decoration: none;
+      color: gray; }
+    .Header .links a:visited {
+      color: gray; }
+    .Header .links a:hover {
+      color: white; }
+    .Header .links a:active {
+      color: white; }
+
+.Home {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .Home .body {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%; }
+    .Home .body .img-button {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      width: auto; }
+      .Home .body .img-button span {
+        background-color: #373736;
+        height: 20%;
+        color: white;
+        font-family: "Raleway Regular";
+        font-size: 10pt;
+        width: 100%; }
+
+.Plants {
+  background-color: white; }
+
+.SubHeader {
+  align-items: center;
+  display: flex;
+  height: 12vw;
+  justify-content: center;
+  width: 10vw;
+  padding: 40px; }

@@ -1,0 +1,46 @@
+.Header {
+    align-items: center;
+    background-color: $background-gray;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    justify-content: space-around;
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    .links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-family: $raleway-light;
+        font-size: 12pt;
+        justify-content: space-between;
+        width: 30%;
+
+        a:link {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+
+        a:active {
+            color: white;
+        }
+    }
+
+    .cart {
+
+    }
+
+}

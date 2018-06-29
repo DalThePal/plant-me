@@ -1,0 +1,31 @@
+.Home {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .body {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+
+        .img-button {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            width: auto;
+
+
+            span {
+                background-color: $background-gray;
+                height: 20%;
+                color: white;
+                font-family: $raleway-regular;
+                font-size: 10pt;
+                width: 100%;
+            }
+        }
+    }
+
+}

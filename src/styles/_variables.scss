@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Aldine Regular';
+    src: url('./fonts/Aldine.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('./fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('./fonts/Raleway-Light.ttf');
+}
+
+
+$background-gray: #373736;
+$aldine-regular: 'Aldine Regular';
+$raleway-regular: 'Raleway Regular';
+$raleway-light: 'Raleway Light';
