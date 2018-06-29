@@ -18,6 +18,7 @@ export default class Footer extends Component {
                 </div>
                 <div className='socialLinks'>
                     <img src='/facebook-icon.png' alt='FB' width='30px' height='30px'/>
+                    <img/>
                 </div>
                 <p>copyright 2017</p>
             </div>

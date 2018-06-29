@@ -22,15 +22,15 @@ export default class Home extends Component {
                 <SubHeader />
                 <div className='body'>
                     <div className='img-button'>
-                        <img src='/dummy-img1.jpg' alt='how we started' width='100%'/>
+                        <img src='/small-vegetable-business.jpg' alt='how we started' width='100%'/>
                         <div>How we started...</div>
                     </div>
                     <div className='img-button'>
-                        <img src='/dummy-img1.jpg' alt='what inspires us' width='100%'/>
+                        <img src='/chairs.jpg' alt='what inspires us' width='100%'/>
                         <div>What inspires us...</div>
                     </div>
                     <div className='img-button'>
-                        <img src='/dummy-img1.jpg' alt='what inspires us' width='100%'/>    
+                        <img src='/potted-cactus.jpg' alt='what inspires us' width='100%'/>    
                         <div>Employee favorites...</div>
                     </div>
                 </div>

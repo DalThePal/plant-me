@@ -1,3 +1,28 @@
 .Plants {
+    align-items: center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+
+        .sortBy {
+            height: 30px;
+            margin-bottom: 10px;
+            width: 150px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 }

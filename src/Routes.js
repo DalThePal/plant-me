@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/Home';
-import Plants from './components/Plants';
+import Plants from './components/plants/Plants';
 import Events from './components/Events';
 import Cart from './components/Cart';
 import Community from './components/Community';

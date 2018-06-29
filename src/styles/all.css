@@ -23,7 +23,8 @@
     justify-content: center;
     width: 70%; }
     .Community .body img {
-      margin-right: 10px; }
+      margin-right: 10px;
+      object-fit: cover; }
     .Community .body p {
       font-family: "Raleway Regular"; }
 
@@ -110,8 +111,12 @@
     .Home .body .img-button {
       display: flex;
       flex-direction: column;
-      margin: 10px;
+      margin: 5px;
       width: 100%; }
+      .Home .body .img-button img {
+        object-fit: cover;
+        height: 300px;
+        width: 300px; }
       .Home .body .img-button div {
         align-items: center;
         background-color: #373736;
@@ -120,11 +125,45 @@
         font-family: "Raleway Regular";
         font-size: 10pt;
         height: 30px;
-        width: 100%;
+        width: 300px;
         z-index: 1; }
 
+.Plant {
+  display: flex;
+  flex-direction: column;
+  margin: 5px; }
+  .Plant img {
+    height: 200px;
+    object-fit: cover;
+    width: 200px; }
+  .Plant .productTag {
+    background-color: white;
+    width: 200px; }
+    .Plant .productTag p {
+      font-family: "Raleway Regular";
+      font-size: 10pt; }
+
 .Plants {
-  background-color: white; }
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .Plants .body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%; }
+    .Plants .body .sortBy {
+      height: 30px;
+      margin-bottom: 10px;
+      width: 150px; }
+    .Plants .body .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
 
 .SubHeader {
   align-items: center;

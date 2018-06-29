@@ -16,9 +16,14 @@
         .img-button {
             display: flex;
             flex-direction: column;
-            margin: 10px;
+            margin: 5px;
             width: 100%;
 
+            img {
+                object-fit: cover;
+                height: 300px;
+                width: 300px;
+            }
 
             div {
                 align-items: center;
@@ -28,7 +33,7 @@
                 font-family: $raleway-regular;
                 font-size: 10pt;
                 height: 30px;
-                width: 100%;
+                width: 300px;
                 z-index: 1;
             }
         }
