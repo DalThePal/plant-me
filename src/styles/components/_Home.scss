@@ -1,7 +1,10 @@
 .Home {
+    align-items: center;
     background-color: white;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 100%;
 
     .body {
         align-items: center;
@@ -13,17 +16,20 @@
         .img-button {
             display: flex;
             flex-direction: column;
-            margin: 5px;
-            width: auto;
+            margin: 10px;
+            width: 100%;
 
 
-            span {
+            div {
+                align-items: center;
                 background-color: $background-gray;
-                height: 20%;
                 color: white;
+                display: flex;
                 font-family: $raleway-regular;
                 font-size: 10pt;
+                height: 30px;
                 width: 100%;
+                z-index: 1;
             }
         }
     }
