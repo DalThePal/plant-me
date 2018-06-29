@@ -8,18 +8,34 @@ import Plant from './Plant';
 class Plants extends Component {
     constructor() {
         super();
+        this.changeSort = this.changeSort.bind(this);
+        this.toggleIsHidden = this.toggleIsHidden.bind(this);
         this.state = {
-            showDropDown: false
+            isHidden: true,
+            sortBy: 'poop'
         }
     }
 
+    toggleIsHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        });
+    }
+
+    changeSort(obj) {
+        this.setState(obj);
+        this.toggleIsHidden();
+        console.log(this.state);
+    }
+
     render() {
-        const plants = this.props.plants.map((plant, item) => {
+        const plants = this.props.plants.map((plant, index) => {
             return (
                 <Plant
                     name={plant.name}
                     price={plant.price}
                     img={plant.img}
+                    key={index}
                 />
             )
         })
@@ -29,13 +45,10 @@ class Plants extends Component {
                 <SubHeader />
                 <div className='body'>
                     <div className='sortBy'>
-                        <img src='/sort-by.png' alt='sort by' width='100%'/>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div onClick={this.toggleIsHidden}>
+                            <p>{this.state.sortBy}</p>
                         </div>
+                        {!this.state.isHidden && <DropDown changeSort={this.changeSort} />}
                     </div>
                     <div className='content'>
                         {plants}
@@ -46,9 +59,31 @@ class Plants extends Component {
     }
 }
 
-function mapStateToProps(state) {
+const DropDown = (props) => {
+    return (
+        <div className='DropDown'>
+            <div
+                onClick={() => props.changeSort({ sortBy: 'full light' })}
+            >full light</div>
+            <div
+                onClick={() => props.changeSort({ sortBy: 'medium light' })}
+            >medium light
+            </div>
+            <div
+                onClick={() => props.changeSort({ sortBy: 'low light' })}
+            >low light
+            </div>
+            <div
+                onClick={() => props.changeSort({ sortBy: 'full light' })}
+            >cannot kill
+            </div>
+        </div>
+    )
+}
+
+const mapStateToProps = (state) => {
     return {
-        plants: state.plants
+        plants: state.plants,
     }
 }
 
