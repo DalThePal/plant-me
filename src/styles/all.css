@@ -29,7 +29,56 @@
       font-family: "Raleway Regular"; }
 
 .Events {
-  background-color: white; }
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .Events .body {
+    display: flex;
+    flex-direction: column;
+    width: 70%; }
+    .Events .body .main-event {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .Events .body .main-event img {
+        height: 300px;
+        margin: 5px;
+        object-fit: cover;
+        width: 615px; }
+      .Events .body .main-event .event-desc {
+        display: flex;
+        flex-direction: column; }
+        .Events .body .main-event .event-desc h1 {
+          font-family: "Raleway Regular"; }
+        .Events .body .main-event .event-desc p {
+          font-family: "Raleway Regular";
+          font-size: 10pt;
+          margin-left: 5px; }
+    .Events .body .sub-events {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .Events .body .sub-events .img-button {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 100%; }
+        .Events .body .sub-events .img-button img {
+          object-fit: cover;
+          height: 300px;
+          width: 300px; }
+        .Events .body .sub-events .img-button div {
+          align-items: center;
+          background-color: #373736;
+          color: white;
+          display: flex;
+          font-family: "Raleway Regular";
+          font-size: 10pt;
+          height: 30px;
+          width: 300px;
+          z-index: 1; }
 
 .Footer {
   align-items: center;
@@ -59,6 +108,8 @@
       background-color: white; }
   .Footer .socialLinks {
     margin: 5px; }
+    .Footer .socialLinks img {
+      margin: 3px; }
   .Footer p {
     color: white;
     font-family: "Raleway Regular";

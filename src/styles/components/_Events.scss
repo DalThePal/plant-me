@@ -1,3 +1,72 @@
 .Events {
+    align-items: center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        .main-event {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            img {
+                height: 300px;
+                margin: 5px;
+                object-fit: cover;
+                width: 615px;
+            }
+
+            .event-desc {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-family: $raleway-regular;
+                }
+
+                p {
+                    font-family: $raleway-regular;
+                    font-size: 10pt;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .sub-events {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .img-button {
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                width: 100%;
+    
+                img {
+                    object-fit: cover;
+                    height: 300px;
+                    width: 300px;
+                }
+    
+                div {
+                    align-items: center;
+                    background-color: $background-gray;
+                    color: white;
+                    display: flex;
+                    font-family: $raleway-regular;
+                    font-size: 10pt;
+                    height: 30px;
+                    width: 300px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
 }
