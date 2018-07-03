@@ -45,11 +45,10 @@ class Plants extends Component {
                 <SubHeader />
                 <div className='body'>
                     <div className='sortBy'>
-                        <div onClick={this.toggleIsHidden}>
-                            <p>{this.state.sortBy}</p>
-                        </div>
-                        {!this.state.isHidden && <DropDown changeSort={this.changeSort} />}
+                        <span className='input'>{this.state.sortBy}</span>
+                        <button onClick={() => this.toggleIsHidden()}><img src='/dropdown-icon.png'/></button>
                     </div>
+                    {!this.state.isHidden && <DropDown changeSort={this.changeSort} />}
                     <div className='content'>
                         {plants}
                     </div>
@@ -62,21 +61,10 @@ class Plants extends Component {
 const DropDown = (props) => {
     return (
         <div className='DropDown'>
-            <div
-                onClick={() => props.changeSort({ sortBy: 'full light' })}
-            >full light</div>
-            <div
-                onClick={() => props.changeSort({ sortBy: 'medium light' })}
-            >medium light
-            </div>
-            <div
-                onClick={() => props.changeSort({ sortBy: 'low light' })}
-            >low light
-            </div>
-            <div
-                onClick={() => props.changeSort({ sortBy: 'full light' })}
-            >cannot kill
-            </div>
+            <div onClick={() => props.changeSort({ sortBy: 'full light' })}>full light</div>
+            <div onClick={() => props.changeSort({ sortBy: 'medium light' })}>medium light</div>
+            <div onClick={() => props.changeSort({ sortBy: 'low light' })}>low light</div>
+            <div onClick={() => props.changeSort({ sortBy: 'cannot kill' })}>cannot kill</div>
         </div>
     )
 }
