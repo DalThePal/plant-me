@@ -19,7 +19,7 @@ export default class Events extends Component {
                 <SubHeader />
                 <div className='body'>
                     <div className='main-event'>
-                        <img src='/potting-party.jpg' alt='potting party' width='100%'/>
+                        <img src='/potting-party.jpg' alt='potting party'/>
                         <div className='event-desc'>
                             <h1>Potting Parties</h1>
                             <p>
