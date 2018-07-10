@@ -210,15 +210,17 @@
       display: flex;
       flex-direction: row; }
       .Plants .body .sortBy span {
-        align-content: center;
+        align-items: center;
         background-color: transparent;
         border-bottom: 1px solid black;
         border-bottom-left-radius: 3px;
         border-left: 1px solid black;
         border-top: 1px solid black;
         border-top-left-radius: 3px;
+        display: flex;
         font-family: "Raleway Regular";
         font-size: 10pt;
+        justify-content: center;
         text-align: center;
         width: 100px; }
       .Plants .body .sortBy button {
@@ -229,6 +231,7 @@
         border-top: 1px solid black;
         border-bottom-right-radius: 3px;
         border-top-right-radius: 3px;
+        box-shadow: none;
         height: 30px;
         width: 30px; }
         .Plants .body .sortBy button img {
