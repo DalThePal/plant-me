@@ -1,4 +1,6 @@
 {
+  "main": "server/server.js",
+  "proxy": "http://localhost:3006",
   "name": "plant-me",
   "version": "0.1.0",
   "private": true,
