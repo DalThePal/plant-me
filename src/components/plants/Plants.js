@@ -16,7 +16,7 @@ class Plants extends Component {
         this.state = {
             dropIsHidden: true,
             modalIsHidden: true,
-            sortBy: '',
+            sortBy: 'all',
             modalItem: null
         }
     }
@@ -41,20 +41,21 @@ class Plants extends Component {
     changeSort(obj) {
         this.setState(obj);
         this.toggleDropIsHidden();
-        console.log(this.state);
     }
 
     render() {
         const plants = this.props.plants.map((plant, index) => {
-            return (
-                <Plant
-                    name={plant.name}
-                    price={plant.price}
-                    img={plant.img}
-                    displayModal={this.displayModal}
-                    key={index}
-                />
-            )
+            if (this.state.sortBy === plant.type || this.state.sortBy === 'all') {
+                return (
+                    <Plant
+                        name={plant.name}
+                        price={plant.price}
+                        img={plant.img}
+                        displayModal={this.displayModal}
+                        key={index}
+                    />
+                )
+            }
         })
         return (
             <div className='Plants'>
@@ -62,7 +63,7 @@ class Plants extends Component {
                 <SubHeader />
                 {
                     !this.state.modalIsHidden &&
-                    <PlantModal 
+                    <PlantModal
                         name={this.state.modalItem.name}
                         price={this.state.modalItem.price}
                         img={this.state.modalItem.img}
@@ -87,6 +88,7 @@ class Plants extends Component {
 const DropDown = (props) => {
     return (
         <div className='DropDown'>
+            <div onClick={() => props.changeSort({ sortBy: 'all' })}>all</div>
             <div onClick={() => props.changeSort({ sortBy: 'full light' })}>full light</div>
             <div onClick={() => props.changeSort({ sortBy: 'medium light' })}>medium light</div>
             <div onClick={() => props.changeSort({ sortBy: 'low light' })}>low light</div>
